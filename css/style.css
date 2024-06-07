@@ -36,28 +36,35 @@ header {
     background-color: #c3d8db;
       
   }
-  
   .agregar-carrito {
     display: block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: hsl(0, 0%, 85%);
+    margin-top: -2vw; 
+    padding: 0.5vw; 
+    background-color: #e7c473;
     color: black;
     border: none;
     cursor: pointer;  
-    font-size: 16px;
-  }
-  .carrito .finalizar-compra {
+    font-size: 2vw; 
+}
+
+
+@media (max-width: 1000px) {
+    .agregar-carrito {
+        font-size: 0.5vw;
+    }
+}
+ .finalizar-compra {
     font-style: normal;
     display: block;
     margin-top: 1%;
     margin-bottom: 2%;
     padding: 0.1vw; 
-    background-color: #c9b0b2;
+    max-height: 10%;
+    background-color: #e7c473;
     color: black;
     border: none;
     cursor: pointer;
-    font-size: 1.5vw; 
+    font-size: calc(1em + 1vw);
     border-radius: 5%;
 }
 
@@ -78,22 +85,23 @@ header {
   }
   
   .producto {
-    width: calc(210px);
-    margin-bottom: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    padding: 20px;
-
-  }
+    width: 20vw; 
+    min-width: 15vw;
+    margin-left: 0.1vw;
+    margin-right: 5vw;
+    border: 1px solid #ccc;
+    border-radius: 5%;
+}
   
-  .producto img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
+.producto img {
+  max-width: 100%; 
+  min-width: 50%;
+  height: auto; 
+}
   
-  .producto h3 {
-    margin-top: 10px;
-  }
+.producto h3 {
+  font-size: 2vw; 
+}
   
   .producto p {
     margin-bottom: 10px;
@@ -149,7 +157,7 @@ header {
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #c9b0b2;
+    background-color: #e7c473;
     min-width: 300%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -202,7 +210,7 @@ header {
 }
 
 .popup-content {
-  background-color: #b7ffd0;
+  background-color: #e7c473;
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
@@ -226,11 +234,29 @@ header {
 }
 
 .search-input {
-  width: 10vw; /* Cambia el ancho a una medida relativa */
+  width: 10vw; 
   padding: 1vw; 
   margin: 1vw 0; 
-  margin-right: 0.1vw;
+  margin-right: 2vw;
   margin-left: 2vw; 
   border: 1px solid #ccc;
   border-radius: 5px;
 }
+#cart-count {
+  font-size: 2vw; 
+}
+
+@media (max-width: 1000px) {
+  #cart-count {
+      font-size: 4vw;
+  }
+}
+
+.proceder-pago {
+  font-size: 2vw;
+  font-family: "Jaini", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(88, 88, 88);
+  margin-left: 2vw;
+}	
