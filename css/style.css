@@ -8,7 +8,7 @@ header {
     font-family: "Jaini", system-ui;
     font-weight: 400;
     font-style: normal;
-    background-color: #c9b0b2;
+    background-color: #e7c473;
     padding: 10px;
     max-height: 80px;
   }
@@ -33,7 +33,7 @@ header {
     font-style: normal;
     margin: 0;
     padding: 0;
-    background-color: #cac5c0;
+    background-color: #c3d8db;
       
   }
   
@@ -202,7 +202,7 @@ header {
 }
 
 .popup-content {
-  background-color: #c9c6bf;
+  background-color: #b7ffd0;
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
@@ -226,7 +226,7 @@ header {
 }
 
 .search-input {
-  width: 10vw; 
+  width: 10vw; /* Cambia el ancho a una medida relativa */
   padding: 1vw; 
   margin: 1vw 0; 
   margin-right: 0.1vw;
