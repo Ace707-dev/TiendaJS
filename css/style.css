@@ -1,13 +1,16 @@
 header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: "Jaini", system-ui;
     font-weight: 400;
     font-style: normal;
-    background-color: #AB8DC3;
+    background-color: #c9b0b2;
     padding: 10px;
-    max-height: 100px;
+    max-height: 80px;
   }
   
   .titulo {
@@ -22,7 +25,7 @@ header {
     font-weight: 400;
     font-style: normal;
     color: rgb(88, 88, 88);
-    margin-left: 40PX;
+    margin-left: 2vw;
 }
   body {
     font-family: "Jaini", system-ui;
@@ -30,7 +33,7 @@ header {
     font-style: normal;
     margin: 0;
     padding: 0;
-    background-color: #d2ffe2;
+    background-color: #cac5c0;
       
   }
   
@@ -45,20 +48,19 @@ header {
     font-size: 16px;
   }
   .carrito .finalizar-compra {
-    font-family: "Jaini", system-ui;
-    font-weight: 400;
     font-style: normal;
     display: block;
     margin-top: 1%;
     margin-bottom: 2%;
-    padding: 10px 20px;
-    background-color: hsl(0, 0%, 85%);
+    padding: 0.1vw; 
+    background-color: #c9b0b2;
     color: black;
     border: none;
     cursor: pointer;
-    font-size: 16px;
-  }
-  
+    font-size: 1.5vw; 
+    border-radius: 5%;
+}
+
   h1 {
     text-align: center;
     font-size: large;
@@ -137,9 +139,6 @@ header {
     text-align: center;
   }
 
-  .finalizar-compra {
-      border-radius: 5%;
-   }
 
   .dropdown {
     position: relative;
@@ -150,19 +149,20 @@ header {
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
+    background-color: #c9b0b2;
+    min-width: 300%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     border-radius: 3%;
   }
   
   .dropdown-content a {
+    letter-spacing: 1px;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    font-size: 2vw;
+    font-size: 125%;
     max-width: 100%;
     max-height: auto;
     min-width: 50%;
@@ -174,6 +174,7 @@ header {
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
   .img {
     max-width: 100%;
     min-width: 50px; 
@@ -181,11 +182,11 @@ header {
     margin-left: 20px;
 }
   
-.svg¨
-{
-    width: 30%;
-    height: auto;
-    margin-left: 20px;
+.svg {
+  max-width: 10vw;
+  min-width: 1vw;
+  height: auto;
+  margin-left: 0.5vw;
 }
 
 .popup {
@@ -201,7 +202,7 @@ header {
 }
 
 .popup-content {
-  background-color: #b7ffd0;
+  background-color: #c9c6bf;
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
@@ -224,11 +225,12 @@ header {
   margin-right: 10px;
 }
 
-.search-input{
-  width: 10%;
-  padding: 10px;
-  margin: 10px 0;
-  margin-right: 8%;
+.search-input {
+  width: 10vw; 
+  padding: 1vw; 
+  margin: 1vw 0; 
+  margin-right: 0.1vw;
+  margin-left: 2vw; 
   border: 1px solid #ccc;
   border-radius: 5px;
 }
