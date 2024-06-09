@@ -114,19 +114,19 @@ function actualizarPopup() {
       productoEl.appendChild(eliminarBtn);
 
       popupContentEl.appendChild(productoEl);
-
-      const procederPagoBtn = document.createElement('button');
-      procederPagoBtn.textContent = 'Proceder al pago';
-      procederPagoBtn.addEventListener('click', () => {
-        procederPago();
-      });
-    
-      popupContentEl.appendChild(procederPagoBtn);
     });
+
+    // Crear y agregar el botón "Proceder al pago" fuera del bucle forEach
+    const procederPagoBtn = document.createElement('button');
+    procederPagoBtn.textContent = 'Proceder al pago';
+    procederPagoBtn.addEventListener('click', () => {
+      procederPago();
+    });
+
+    popupContentEl.appendChild(procederPagoBtn);
   }
-
-
 }
+
 function eliminarDelCarrito(index) {
   carrito.splice(index, 1);
   actualizarPopup();
